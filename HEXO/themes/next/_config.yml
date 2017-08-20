@@ -48,9 +48,9 @@ index_with_subtitle: false
 menu:
   home: /
   #categories: /categories/
-  about: /about/
   archives: /archives/
   tags: /tags/
+  about: /about/
   #sitemap: /sitemap.xml
   #commonweal: /404/
 
@@ -90,8 +90,10 @@ scheme: Mist
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
-  #LinkLabel: Link
+social:
+  GitHub: https://github.com/junior2ran/
+  E-Mail: mailto:hdr01@126.com
+  Weibo: http://weibo.com/hesuddenly/
 
 # Social Links Icons
 # Icon Mapping:
@@ -117,16 +119,16 @@ social_icons:
   Weibo: weibo
 
 # Blog rolls
-#links_title: Links
-#links_layout: block
-#links_layout: inline
-#links:
-  #Title: http://example.com/
+links_title: 好友的博客
+# links_layout: block
+# links_layout: inline
+links:
+  Andy Sheng: https://andy-sheng.github.io/
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
-#avatar:
+avatar: /uploads/avatar.jpg
 
 # Table Of Contents in the Sidebar
 toc:
@@ -583,7 +585,7 @@ pace_theme: pace-theme-minimal
 canvas_nest: false
 
 # three_waves
-three_waves: false
+three_waves: true
 
 # canvas_lines
 canvas_lines: false

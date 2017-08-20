@@ -25,7 +25,7 @@ HTML(5)、CSS(3)、JavaScript(ES6)、React、PHP、Git、NPM、Webpack
 没事会写写软笔书法，颜楷、隶书、行书都略懂一二。
 
 * 舞蹈技能（★★★★☆）
-<embed src='http://player.youku.com/player.php/sid/XNzE2MjE3MDUy/v.swf' allowFullScreen='true' quality='high' width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
+<embed src='//player.youku.com/player.php/sid/XNzE2MjE3MDUy/v.swf' allowFullScreen='true' quality='high' width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
 林梦赐予我胜利！！毫不拖泥带水的秒杀！
 
 * 摄影技能（★★☆☆☆）
