@@ -5,8 +5,8 @@ tags: [前端, 面试]
 ---
 # 周锐JD
 ## 写出块级元素、行内元素 
-块级元素：div, p, form, ul, li, ol, dl, form, address, fieldset, hr, menu, table
-行内元素：span, strong, em, br, img, input, label, select, textarea, cite
+块级元素：`div`， `p`， `form`， `ul`， `li`， `ol`， `dl`， `form`， `address`， `fieldset`， `hr`， `menu`， `table`
+行内元素：`span`， `strong`， `em`， `br`， `img`， `input`， `label`， `select`， `textarea`， `cite`
 *注意：`img`标签是一种特殊的可以设置宽和高的行内元素*
 
 ## 布局
@@ -17,11 +17,11 @@ tags: [前端, 面试]
 
 ## position有哪些
 * static(静态)： 没有特别的设定，遵循基本的定位规定，不能通过z-index进行层次分级。
-* relative(相对定位)： 对象不可层叠、不脱离文档流，参考自身静态位置通过 top,bottom,left,right 定位，并且可以通过z-index进行层次分级。
-* absolute(绝对定位)： 脱离文档流，通过 top,bottom,left,right 定位。选取其最近一个最有定位设置的父级对象进行绝对定位，如果对象的父级没有设置定位属性，absolute元素将以body坐标原点进行定位，可以通过z-index进行层次分级。
-* fixed（固定定位）： 这里所固定的参照对像是可视窗口而并非是body或是父级元素。可通过z-index进行层次分级。（父元素为可视化窗口的absolute定位）
+* relative(相对定位)： 对象不可层叠、不脱离文档流，参考自身静态位置通过 `top`， `bottom`， `left`， `right`定位，并且可以通过`z-index`进行层次分级。
+* absolute(绝对定位)： 脱离文档流，通过 `top`， `bottom`， `left`， `right` 定位。选取其最近一个最有定位设置的父级对象进行绝对定位，如果对象的父级没有设置定位属性，`absolute`元素将以`body`坐标原点进行定位，可以通过`z-index`进行层次分级。
+* fixed（固定定位）： 这里所固定的参照对像是可视窗口而并非是`body`或是父级元素。可通过`z-index`进行层次分级。（父元素为可视化窗口的`absolute`定位）
 ## icon css spirites
-　　CSS Sprites其实就是把网页中一些背景图片整合到一张图片文件中，再利用CSS的"background-image"，"background- repeat"，"background-position"的组合进行背景定位，background-position可以用数字精确的定位出背景图片的位置。
+　　CSS Sprites其实就是把网页中一些背景图片整合到一张图片文件中，再利用CSS的`background-image`，`background- repeat`，`background-position`的组合进行背景定位，`background-position`可以用数字精确的定位出背景图片的位置。
 　　在网页访问中，客户端每需要访问一张图片都会向服务器发送请求，所以，访问的图片数量越多，请求次数也就越多，造成延迟的可能性也就越大。所以，CSS Sprites技术加速的关键，并不是降低质量，而是减少请求次数，从而提高网页的加载速度。
 
 ## 数组去重
@@ -68,14 +68,14 @@ ie:`document.idname`或者`document.getElementById("idName")`
 解决办法：统一使用`document.getElementById("idName")`
 
 - window.location.href问题
-说明:IE或者Firefox2.0.x下,可以使用`window.location`或`window.location.href`
-Firefox1.5.x下,只能使用`window.location`
+说明:IE或者Firefox2.0.x下，可以使用`window.location`或`window.location.href`
+Firefox1.5.x下，只能使用`window.location`
 解决方法：使用`window.location`来代替`window.location.href`
 
 - firefox与IE的父元素(parentElement)的区别
 IE：`obj.parentElement`
 firefox：`obj.parentNode`
-解决方法: 因为firefox与IE都支持DOM,因此使用`obj.parentNode`是不错选择.
+解决方法: 因为firefox与IE都支持DOM，因此使用`obj.parentNode`是不错选择.
 
 - event.srcElement问题
 问题说明：IE下，`event`对象有`srcElement`属性，但是没有`target`属性；Firefox下，`event`对象有`target`属性，但是没有`srcElement`属性。
@@ -319,12 +319,12 @@ var obj={
 obj.b();    // 输出1。
 ```
 - 普通函数中的`this`
-1. `this`总是代表它的直接调用者, 例如 `obj.func` ,那么`func`中的`this`就是`obj`
-2. 在默认情况(非严格模式下,未使用 `'use strict'`),没找到直接调用者,则this指的是 `window`
-3. 在严格模式下,没有直接调用者的函数中的`this`是 `undefined`
-4. 使用`call`,`apply`,`bind`(ES5新增)绑定的,`this`指的是 绑定的对象
+1. `this`总是代表它的直接调用者， 例如 `obj.func` ，那么`func`中的`this`就是`obj`
+2. 在默认情况(非严格模式下，未使用 `'use strict'`)，没找到直接调用者，则this指的是 `window`
+3. 在严格模式下，没有直接调用者的函数中的`this`是 `undefined`
+4. 使用`call`，`apply`，`bind`(ES5新增)绑定的，`this`指的是 绑定的对象
 - 箭头函数中的`this`
-默认指向在定义它时,它所处的对象,而不是执行时的对象, 定义它的时候,可能环境是`window`
+默认指向在定义它时，它所处的对象，而不是执行时的对象， 定义它的时候，可能环境是`window`
 
 ## BFC相关知识
 父元素与子元素同时设置`margin-top`是怎样的效果（父子之间无间距，对外部`margin`取父子`margin-top`较大值。）
@@ -353,15 +353,15 @@ span:first-of-type{
 ```
 哪个css生效么？为什么？（`last-child` 和 `last-of-type`；`nth-child（n）`和`nth-of-type（n）`）
 你还知道哪些伪类选择器。
-`p:first-child`  匹配到的是p元素,因为p元素是div的第一个子元素；
+`p:first-child`  匹配到的是p元素，因为p元素是div的第一个子元素；
 `h1:first-child`  匹配不到任何元素，因为在这里h1是div的第二个子元素，而不是第一个；
 `span:first-child`  匹配不到任何元素，因为在这里两个span元素都不是div的第一个子元素；
 
-`p:first-of-type`  匹配到的是p元素,因为p是div的所有类型为p的子元素中的第一个；
+`p:first-of-type`  匹配到的是p元素，因为p是div的所有类型为p的子元素中的第一个；
 `h1:first-of-type ` 匹配到的是h1元素，因为h1是div的所有类型为h1的子元素中的第一个；
 `span:first-of-type`  匹配到的是第三个子元素span。这里div有两个为span的子元素，匹配到的是它们中的第一个。
 
-其他伪类还有 `:focus`, `:active`, `:hover`, `:visited`
+其他伪类还有 `:focus`， `:active`， `:hover`， `:visited`
 
 ## 用纯css实现一个宽度为屏幕50%，水平垂直居中的自适应正方形
 ```
