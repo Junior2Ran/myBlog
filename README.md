@@ -1,4 +1,12 @@
 # Hexo博客源文件备份
+首先我们假设你已经会使用Hexo搭建自己的博客了
+如果有不清楚的同学，请移步官方网站先安装hexo，并学会使用至少
+```
+hexo s
+hexo g
+hexo d
+```
+这三个命令~
 ## 实现方法:
 
 * 在Github下创建一个新的repository，取名为myBlog。
