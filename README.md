@@ -1,6 +1,6 @@
 # Hexo博客源文件备份
 首先我们假设你已经会使用Hexo搭建自己的博客了
-如果有不清楚的同学，请移步官方网站先安装hexo，并学会使用至少
+如果有不清楚的同学，请移步[官方网站](https://hexo.io/)先安装hexo，并学会使用至少
 ```
 hexo s
 hexo g
@@ -31,7 +31,11 @@ git commit -m "init hexo backup"
 ```
 git push origin master
 ```
-* 现在在任何一台电脑上，只需要git clone https://github.com/yourname/myBlog.git ,即可完成将Hexo源文件复制到本地。（请将后面的https://github.com/yourname/myBlog.git 替换为自己相应的仓库地址。）
+* 现在在任何一台电脑上，只需要执行
+```
+git clone https://github.com/yourname/myBlog.git 
+```
+即可完成将Hexo源文件复制到本地（请将`yourname/myBlog.git`替换为自己相应的仓库地址。）
 
 * 在本地编写完博客时，顺次执行以下命令，即可完成Hexo博客源文件的更新同步，保持Github上的hexo源码为最新版本。
 ```
