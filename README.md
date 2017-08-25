@@ -31,6 +31,7 @@ git commit -m "init hexo backup"
 ```
 git push origin master
 ```
+
 * 现在在任何一台电脑上，只需要执行
 ```
 git clone https://github.com/yourname/myBlog.git 
