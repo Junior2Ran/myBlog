@@ -331,7 +331,7 @@ disqus:
   count: true
 
 # Hypercomments
-#hypercomments_id:
+hypercomments_id: 94900
 
 # changyan
 changyan:
