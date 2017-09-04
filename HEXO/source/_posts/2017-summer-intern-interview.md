@@ -25,7 +25,7 @@ tags: [前端, 面试]
 　　在网页访问中，客户端每需要访问一张图片都会向服务器发送请求，所以，访问的图片数量越多，请求次数也就越多，造成延迟的可能性也就越大。所以，CSS Sprites技术加速的关键，并不是降低质量，而是减少请求次数，从而提高网页的加载速度。
 
 ## 数组去重
-```
+```javascript
 /*1.最基础的方法*/
 var res = [];
 for(var i=0; i<arr.length; i++){
@@ -87,7 +87,7 @@ firefox：`obj.parentNode`
 ## 让div垂直水平居中
 - **水平居中**
 实现起来很简单，直接用margin：0 auto就能完成
-```
+```css
 .mydiv{   
     margin:0 auto;   
     width:300px;   
@@ -98,7 +98,7 @@ firefox：`obj.parentNode`
 - **水平垂直居中**
 1. 知道DIV的宽和高
 用绝对定位，设置top和left分别为50%，然后将margin的左边和上面分别设置宽高的一半的负数。
-```
+```css
 .mydiv{ 
    width:300px;  
    height:200px;  
@@ -109,7 +109,7 @@ firefox：`obj.parentNode`
 }
 ```
 2. 用CSS3中的transform（IE8以上支持）
-```
+```css
 .father{
     position:relative;
 }
@@ -121,7 +121,7 @@ firefox：`obj.parentNode`
 }
 ```
 3. 用CSS3中的flex布局（IE8以上支持）
-```
+```css
 .vertical-container{
     display: flex;
     align-items: center;
@@ -130,7 +130,7 @@ firefox：`obj.parentNode`
 ```
 
 ## 三个div，上下div固定，中间div高度自适应
-```
+```css
 <style>
     html, body{
       height: 100%;
@@ -163,7 +163,7 @@ firefox：`obj.parentNode`
 
 ## "www.abc.html?a=1&b=jq"中如何得到a和b的值
 - 获取url?后的值，利用split('&')将值转换成数组遍历
-```
+```javascript
 //sArgName表示要获取哪个参数的值 
 function GetArgsFromHref(sArgName) 
 { 
@@ -189,7 +189,7 @@ function GetArgsFromHref(sArgName)
 } 
 ```
 - 正则匹配
-```
+```javascript
 function GetQueryString(name) {
     var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)","i");
     var r = window.location.search.substr(1).match(reg);
@@ -199,7 +199,7 @@ alert(GetQueryString("参数名"));
 ```
 - **红宝书上解决办法（比第一种好）**
 `location.search` 返回的是url的查询字符串，这个字符串以问号开头。
-```
+```javascript
 function getQueryStringArgs(){
     //取得查询字符串并去掉开头的问号
     var qs = (location.search.length>0) ? location.search.substring(1) : "");
@@ -242,7 +242,7 @@ HTTP使用TCP而不是UDP的原因在于（打开）一个网页必须传送很�
 - 事件委托：利用事件冒泡的特性，将里层的事件委托给外层事件，根据`event`对象的属性进行事件委托，改善性能。
 使用事件委托能够避免对特定的每个节点添加事件监听器；事件监听器是被添加到它们的父元素上。事件监听器会分析从子元素冒泡上来的事件，找到是哪个子元素的事件。
 - 事件冒泡、事件捕获阻止：
-```
+```javascript
 event.stopPropagation( );   // 阻止事件的进一步传播，包括（冒泡，捕获），无参数
 e.preventDefault( );        // 阻止事件默认行为。
 return false;               // 相当于同时调用e.preventDefault()和e.stopPropagation()
@@ -263,7 +263,7 @@ typeof返回的是字符串有六种可能:`number`、`string`、`boolean`、`ob
 闭包：在一个函数里面嵌套另一个函数，内部的函数能够访问到外部函数的变量，这种形式叫闭包。 
 
 ## 变量提升题
-```
+```javascript
   var a = 1;
   function x(){
     console.log(a);
@@ -275,7 +275,7 @@ typeof返回的是字符串有六种可能:`number`、`string`、`boolean`、`ob
 输出是undefined，2。因为在函数内有自己的作用域，x函数中定义了a的值，所以不会取到全局变量a=1的值，但是在函数中由于变量声明会提升，所以会输出undefined，2。
 
 ## 作用域题
-```
+```javascript
 var a = 1;
 if(true){
    var a =2;
@@ -311,7 +311,7 @@ event.currentTarget指向事件所绑定的元素，而event.target始终指向�
 `navigator.userAgent`
 
 ## 箭头函数的this
-```
+```javascript
 var obj={
   a:1,
   b:()=>{console.log(this.a)}
@@ -333,7 +333,7 @@ obj.b();    // 输出1。
 如何实现仅有子元素`margin-top`生效（父元素设置`overflow：hidden`最佳，也可以`padding-top:1px`）。
  
 ## 伪类选择器
-```
+```css
 <div>
       <p>第一个子元素</p >
       <h1>第二个子元素</h1>
@@ -364,7 +364,7 @@ span:first-of-type{
 其他伪类还有 `:focus`， `:active`， `:hover`， `:visited`
 
 ## 用纯css实现一个宽度为屏幕50%，水平垂直居中的自适应正方形
-```
+```css
 .middle{
       background: red;
       width: 50%;
@@ -379,7 +379,7 @@ span:first-of-type{
 padding是根据父元素的宽度来计算的，这个例子中，父元素为body，刚好是正方形。
  
 ## 数组去重
-```
+```javascript
 var ans = (...new Set(arr));
 ```
 ## 统计一个字符串中出现最多的字母及其出现次数
