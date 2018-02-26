@@ -58,6 +58,7 @@ tags: [前端, 随笔]
   ```
 ### 转换成字符串
 可以使用`toString()`，`String()`（其中`+""`与`String()`作用相同）
+
 - 数字，布尔值，对象和字符串都有`toString()`方法，但是`null`和`undefined`没有这个方法。
 - 在调用数字的`toString()`方法时，可以传递一个参数，让函数输出二进制、八进制、十六进制等。
 - 在有`null`和`undefined`的情况下，可以用`String()`方法。`String(null);  // "null"`
