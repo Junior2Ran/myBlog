@@ -18,16 +18,16 @@ use motion: false
 HTML(5)、CSS(3)、JavaScript(ES6)、React、PHP、Git、NPM、Webpack
 
 * 音乐技能（★★★★☆）
-喜欢的音乐类型主要包括爵士、R&B、Soul、Funk。不喜欢民谣诶=。=
+爵士、R&B、Soul、Funk。
 非资深方大同、TIA、陶吉吉歌迷。
-对HipHop有专业的理解哦～
+HipHop专业十级。
 
 * 书法技能（★★★☆☆）
-没事会写写软笔书法，颜楷、隶书、行书都略懂一二。
+软笔书法，颜楷、隶书、行书略懂一二。
 
 * 舞蹈技能（★★★★☆）
 <embed src='//player.youku.com/player.php/sid/XNzE2MjE3MDUy/v.swf' allowFullScreen='true' quality='high' width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
-林梦赐予我胜利！！毫不拖泥带水的秒杀！
+林梦裁判！！秒杀！
 
 * 摄影技能（★★☆☆☆）
 <img src='/uploads/photo1.jpg' width='200px' style="float:left;margin:0 2px 30px" />
@@ -46,3 +46,4 @@ HTML(5)、CSS(3)、JavaScript(ES6)、React、PHP、Git、NPM、Webpack
 ### 达成成就
 * 第18届 “秋之韵” 歌手大赛**冠军**、第4届 “网事如歌” 歌手大赛**冠军**、“北邮好声音” 校园歌手大赛**亚军**
 * 第2届ROCK’N’ROLL街舞挑战赛**四强**
+* 鸟巢演出
