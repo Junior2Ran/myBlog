@@ -78,6 +78,6 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://github.com/junior2ran/junior2ran.github.io.git
+  repository: git@github.com:junior2ran/junior2ran.github.io.git
   branch: master
 

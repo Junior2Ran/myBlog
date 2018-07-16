@@ -21,6 +21,8 @@ save_link.dispatchEvent(event);
 ![Alt text](canvas-download-big-file/1531718922809.png)  
 这让人很费解，百度了一下也查不到这个问题所在的原因是什么，于是只能寻求解决办法。
 
+<!--more-->
+
 ## 解决方案
 ### 方法一：jpeg格式+质量参数
 首先仔细看一下`canvas.toDataURL`这个方法
