@@ -58,3 +58,9 @@ hexo g
 hexo s
 ```
 之后在浏览器里输入 http://127.0.0.1:4000/ 就可以看到自己的博客了。
+
+## 发带图片博客的方法
+- 把主页配置文件`_config.yml` 里的`post_asset_folder`这个选项设置为`true`
+- `npm install hexo-asset-image --save`
+- 运行`hexo n "xxxx"`来生成md博文时，`/source/_posts`文件夹内除了`xxxx.md`文件还有一个同名的文件夹
+- 引用图片`![你想输入的替代文字](xxxx/图片名.jpg)`
