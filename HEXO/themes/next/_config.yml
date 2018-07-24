@@ -331,7 +331,7 @@ disqus:
   count: true
 
 # Hypercomments
-hypercomments_id: 94900
+# hypercomments_id: 94900
 
 # changyan
 changyan:
@@ -339,6 +339,15 @@ changyan:
   appid:
   appkey:
 
+# Gitment
+# Introduction: https://imsun.net/posts/gitment-introduction/
+gitment:
+  enable: true
+  githubID: Junior2Ran
+  repo: junior2ran.github.io
+  ClientID: 60a1b27531e5f3487f0a
+  ClientSecret: c6ad71d981fb41f89fb130ab69a09a7b7be5a212
+  lazy: false
     
 # Valine. 
 # You can get your appid and appkey from https://leancloud.cn
